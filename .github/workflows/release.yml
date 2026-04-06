@@ -81,7 +81,7 @@ jobs:
           app-id: ${{ secrets.CCC_BOT_APP_ID }}
           private-key: ${{ secrets.CCC_BOT_PRIVATE_KEY }}
           owner: common-cloud-controls
-          repositories: website-new
+          repositories: common-cloud-controls.github.io
 
       - name: Release and publish
         if: steps.changes.outputs.changed == 'true'
