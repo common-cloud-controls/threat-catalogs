@@ -20,8 +20,13 @@ imports:
         strength: 0 # Not yet specified
         remarks: Logging and Monitoring are Disabled
 
+groups:
+  - id: ungrouped
+    title: Ungrouped
+
 threats:
   - id: CCC.AUDITLOG.TH01
+    group: ungrouped
     title: Insufficient Audit Logs
     description: |
       If security critical audit events are not logged then it increases the difficulty to detect threats
@@ -40,6 +45,7 @@ threats:
           - reference-id: CWE-778
           - reference-id: CWE-223
   - id: CCC.AUDITLOG.TH02
+    group: ungrouped
     title: Log Ingestion Latency
     description: |
       Large spikes or sustained delays in log ingestion may degrade the timeliness
@@ -63,6 +69,7 @@ threats:
           - reference-id: CWE-778
           - reference-id: CWE-223
   - id: CCC.AUDITLOG.TH03
+    group: ungrouped
     title: Sensitive Data Logged
     description: |
       Sensitive information such as  passwords, environment variables,
@@ -96,6 +103,7 @@ threats:
           - reference-id: CWE-532
           - reference-id: CWE-200
   - id: CCC.AUDITLOG.TH04
+    group: ungrouped
     title: Insufficient encoding of audit logs
     description: |
       User-supplied data such as scripts, control characters, escape sequences, or code fragments
@@ -124,6 +132,7 @@ threats:
           - reference-id: CWE-117
           - reference-id: CWE-116
   - id: CCC.AUDITLOG.TH05
+    group: ungrouped
     title: Logging Evasion via violating size constraints
     description: |
       An attacker can evade detection by intentionally crafting input that violates

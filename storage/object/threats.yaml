@@ -32,8 +32,13 @@ imports:
       - reference-id: CCC.Core.TH15
         remarks: Automated Enumeration and Reconnaissance by Non-human Entities
 
+groups:
+  - id: ungrouped
+    title: Ungrouped
+
 threats:
   - id: CCC.ObjStor.TH01
+    group: ungrouped
     title: Data Exfiltration via Insecure Lifecycle Policies
     description: |
       Misconfigured lifecycle policies may unintentionally allow data to be

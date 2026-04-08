@@ -41,8 +41,13 @@ imports:
         strength: 0 # Not yet specified
         remarks: Logging and Monitoring are Disabled
 
+groups:
+  - id: ungrouped
+    title: Ungrouped
+
 threats:
   - id: CCC.GenAI.TH01
+    group: ungrouped
     title: Prompt Injection
     description: |
       Prompt injection may occur when crafted input is used to manipulate the
@@ -122,6 +127,7 @@ threats:
             remarks: LLM Jailbreak
 
   - id: CCC.GenAI.TH02
+    group: ungrouped
     title: Data Poisoning
     description: |
       Data poisoning occurs when training, fine-tuning or embedding data is
@@ -178,6 +184,7 @@ threats:
             remarks: RAG Poisoning
 
   - id: CCC.GenAI.TH03
+    group: ungrouped
     title: Sensitive Information Disclosure
     description: |
       Sensitive data can be memorised by the model from user interaction or
@@ -227,6 +234,7 @@ threats:
             remarks: LLM Data Leakage
 
   - id: CCC.GenAI.TH04
+    group: ungrouped
     title: Insecure / Unreliable Model Output
     description: |
       A GenAI model may generate content that is incorrect, misleading or
@@ -312,6 +320,7 @@ threats:
             remarks: LLM Response Rendering
 
   - id: CCC.GenAI.TH05
+    group: ungrouped
     title: Model Overreliance
     description: |
       Model overreliance and misplaced implicit trust in the output of
@@ -357,6 +366,7 @@ threats:
             remarks: LLM Trusted Output Components Manipulation
 
   - id: CCC.GenAI.TH06
+    group: ungrouped
     title: Unintended Action by a Model-Based Agent
     description: |
       A model-based agent, given the authority to execute tools or interact
@@ -393,6 +403,7 @@ threats:
             remarks: LLM Prompt Crafting
 
   - id: CCC.GenAI.TH07
+    group: ungrouped
     title: Insecure Plugin
     description: |
       A plugin integrated with a GenAI model may contain vulnerabilities
@@ -424,6 +435,7 @@ threats:
             remarks: LLM Plugin Compromise
 
   - id: CCC.GenAI.TH08
+    group: ungrouped
     title: Model Tampering
     description: |
       Supply chain risks, including tampering with a model's core components
@@ -477,6 +489,7 @@ threats:
             remarks: AI Supply Chain Compromise
 
   - id: CCC.GenAI.TH09
+    group: ungrouped
     title: Lack of Explainability
     description: |
       The "black box" nature of GenAI models makes it difficult or impossible
@@ -505,6 +518,7 @@ threats:
             remarks: "LLM Trusted Output Components Manipulation: Citations"
 
   - id: CCC.GenAI.TH10
+    group: ungrouped
     title: Model Version Drift
     description: |
       An update to a managed GenAI model may cause unpredictable and

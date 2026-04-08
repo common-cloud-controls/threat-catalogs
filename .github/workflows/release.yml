@@ -26,7 +26,7 @@ jobs:
           cache-dependency-path: toolkit/go.sum
 
       - name: Build ccc
-        run: go build -o toolkit/ccc .
+        run: go build -o ccc .
         working-directory: toolkit
 
       - uses: actions/upload-artifact@v4

@@ -26,8 +26,13 @@ imports:
         strength: 0 # Not yet specified
         remarks: Unauthorized Network Access via Misconfigured Rules
 
+groups:
+  - id: ungrouped
+    title: Ungrouped
+
 threats:
   - id: CCC.LB.TH01
+    group: ungrouped
     title: Unrestricted Request Traffic Overwhelms Downstream Services
     description: |
       Absence of filtering or rate limiting permits malicious traffic to
@@ -54,6 +59,7 @@ threats:
             remarks: Brute Force
 
   - id: CCC.LB.TH03
+    group: ungrouped
     title: Traffic Distribution Is Manipulated
     description: |
       Adjusting distribution policies can concentrate traffic on specific nodes
@@ -74,6 +80,7 @@ threats:
           - reference-id: T1557
 
   - id: CCC.LB.TH04
+    group: ungrouped
     title: Session Persistence Is Exploited
     description: |
       Improper session-affinity settings can enable session fixation or
@@ -91,6 +98,7 @@ threats:
           - reference-id: T1557
 
   - id: CCC.LB.TH05
+    group: ungrouped
     title: Health Checks Are Exploited to Take Services Offline
     description: |
       Manipulating health-check endpoints or responses can cause healthy
@@ -111,6 +119,7 @@ threats:
           - reference-id: T1583
 
   - id: CCC.LB.TH06
+    group: ungrouped
     title: Sensitive Metadata Exposure via HTTP Headers
     description: |
       Response headers may reveal software versions, internal IPs, or other
@@ -126,6 +135,7 @@ threats:
           - reference-id: T1530
 
   - id: CCC.LB.TH07
+    group: ungrouped
     title: TLS Certificates Are Expired or Invalid
     description: |
       Stale or untrusted certificates weaken encrypted-traffic protection.

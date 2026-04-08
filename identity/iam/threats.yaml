@@ -23,8 +23,13 @@ imports:
         strength: 0 # Not yet specified
         remarks: Automated Enumeration and Reconnaissance by Non-human Entities
 
+groups:
+  - id: ungrouped
+    title: Ungrouped
+
 threats:
   - id: CCC.IAM.TH01
+    group: ungrouped
     title: Valid Cloud Credentials Abuse
     description: |
       Valid identity credentials such as access keys, tokens or passwords are misused or
@@ -74,6 +79,7 @@ threats:
             remarks: Brute Force
 
   - id: CCC.IAM.TH02
+    group: ungrouped
     title: Overly-Permissive IAM Policy
     description: |
       An access control policy attached to an identity or a resource is
@@ -109,6 +115,7 @@ threats:
             remarks: "Valid Accounts: Cloud Accounts"
 
   - id: CCC.IAM.TH03
+    group: ungrouped
     title: Overly-Permissive Identity Trust Policy
     description: |
       An IAM role or service principal's trust policy is configured to allow principals
@@ -135,6 +142,7 @@ threats:
             remarks: "Valid Accounts: Cloud Accounts"
 
   - id: CCC.IAM.TH04
+    group: ungrouped
     title: Additional Cloud Credentials Creation
     description: |
       An adversary with access to a sufficiently privileged cloud account may create
@@ -169,6 +177,7 @@ threats:
             remarks: "Account Manipulation: Additional Cloud Credentials"
 
   - id: CCC.IAM.TH05
+    group: ungrouped
     title: Additional IAM Roles Creation
     description: |
       An adversary with access to a sufficiently privileged cloud account may create
@@ -193,6 +202,7 @@ threats:
             remarks: "Account Manipulation: Additional Cloud Roles"
 
   - id: CCC.IAM.TH06
+    group: ungrouped
     title: IAM Policies Modification
     description: |
       An adversary with access to a sufficiently privileged cloud account may modify
@@ -220,6 +230,7 @@ threats:
             remarks: "Modify Authentication Process: Conditional Access Policies"
 
   - id: CCC.IAM.TH07
+    group: ungrouped
     title: Identity Inherits Excessive Permissions Through Group Membership
     description: |
       An identity principal becomes a member of one or more IAM groups, and the combined
@@ -240,6 +251,7 @@ threats:
             remarks: Account Manipulation
 
   - id: CCC.IAM.TH08
+    group: ungrouped
     title: Privilege Escalation via Indirect Role Usage
     description: |
       An identity principal possesses specific, highly privileged permissions, such as the
@@ -267,6 +279,7 @@ threats:
             remarks: "Abuse Elevation Control Mechanism: Temporary Elevated Cloud Access"
 
   - id: CCC.IAM.TH09
+    group: ungrouped
     title: Long-Lived Static Credentials
     description: |
       Long-lived static credentials such as access keys for an identity are used and
@@ -292,6 +305,7 @@ threats:
             remarks: Unsecured Credentials
 
   - id: CCC.IAM.TH10
+    group: ungrouped
     title: Orphaned Federated Identity Retains Access
     description: |
       A federated identity is de-provisioned from the external Identity Provider (IdP),
@@ -316,6 +330,7 @@ threats:
             remarks: Valid Accounts
 
   - id: CCC.IAM.TH11
+    group: ungrouped
     title: Unused Credentials
     description: |
       Unused IAM identity that is no longer needed or monitored remains active. Its compromise
@@ -346,6 +361,7 @@ threats:
             remarks: Unsecured Credentials
 
   - id: CCC.IAM.TH12
+    group: ungrouped
     title: IAM Role is Coerced into Unauthorized Cross-Account Actions (Confused Deputy)
     description: |
       An external actor tricks a legitimate, authorized third-party application into making requests
