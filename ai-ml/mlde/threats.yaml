@@ -1,5 +1,5 @@
 imports:
-  - reference-id: CCC
+  - reference-id: CCC.Core.Threats
     entries: []
 
 threats: []

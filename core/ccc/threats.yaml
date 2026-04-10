@@ -14,7 +14,7 @@ threats:
       unauthorized actions which impact the integrity and availability of
       resources and data.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP06
             remarks: Access Control
@@ -58,7 +58,7 @@ threats:
       interception or modification in transit if not properly encrypted,
       impacting the confidentiality or integrity of the transmitted data.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries: []
     external-mappings:
       - reference-id: MITRE-ATT&CK
@@ -77,7 +77,7 @@ threats:
       untrusted, unstable, or insecure, this could result in a loss of
       confidentiality, integrity, or availability of the service and its data.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP08
             remarks: Data Replication
@@ -105,7 +105,7 @@ threats:
       deployed. Confidentiality may be impacted if the data is replicated to a
       network where the geopolitical status is untrusted, unstable, or insecure.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP21
             remarks: Replication
@@ -123,7 +123,7 @@ threats:
       at all. This could lead to compromised data confidentiality and integrity,
       potentially also affecting recovery processes and data availability.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP08
             remarks: Data Replication
@@ -151,7 +151,7 @@ threats:
       deletion, alteration, or limited access to data can impact the
       availability of the service and the system it is part of.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP11
             remarks: Backup
@@ -178,7 +178,7 @@ threats:
       monitoring, hindering forensic investigations, and reducing the accuracy
       of audit trails.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP03
             remarks: Access Log Publication
@@ -203,7 +203,7 @@ threats:
       decisions, budget exhaustion, financial losses, and hindered incident
       detection.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP15
             remarks: Cost Management
@@ -225,7 +225,7 @@ threats:
       If logs are not adequately sanitized, this may also directly impact the
       confidentiality of sensitive data.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP03
             remarks: Access Log Publication
@@ -276,7 +276,7 @@ threats:
       attacks of opportunity and support the planning of attacks on the
       service, system, or network.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP03
             remarks: Access Log Publication
@@ -305,7 +305,7 @@ threats:
       conceal legitimate issues, and disrupt the availability or reliability
       of systems and their data.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP07
             remarks: Event Publication
@@ -330,7 +330,7 @@ threats:
       not designed to expect such a failure, the effect could also cascade to
       other services and resources.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP04
             remarks: Transaction Rate Limits
@@ -357,7 +357,7 @@ threats:
       compromised confidentiality, integrity, or availability of the system and
       its data.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP20
             remarks: Tagging
@@ -376,7 +376,7 @@ threats:
       exploit these vulnerabilities to compromise the confidentiality,
       integrity, or availability of the system and its data.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP18
             remarks: Versioning
@@ -411,7 +411,7 @@ threats:
       and the network topology, which can be used to plan an attack against
       the system, the service, or its child resources.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP14
             remarks: API Access
@@ -430,7 +430,7 @@ threats:
       incidents while also impacting system design decisions and enforcement of
       operational thresholds, such as autoscaling or cost management.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP10
             remarks: Logging
@@ -450,7 +450,7 @@ threats:
       could lead to the decryption of sensitive data, impacting its
       confidentiality and integrity.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP01
             remarks: Encryption in Transit Enabled by Default
@@ -472,7 +472,7 @@ threats:
       service for legitimate users, leading to a loss of availability anywhere
       in the system.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP29
             remarks: Active Ingestion
