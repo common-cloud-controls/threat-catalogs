@@ -64,7 +64,7 @@ threats:
       similarity APIs, especially with unrestricted access. This enables model inversion
       attacks, membership inference, and unauthorized data leakage from stored embeddings.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Vector.Capabilities
         entries:
           - reference-id: CCC.Vector.CP01
           - reference-id: CCC.Vector.CP03
@@ -81,7 +81,7 @@ threats:
       through ingestion endpoints, polluting the dataset and degrading search quality,
       or subtly steering results toward specific outcomes.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Vector.Capabilities
         entries:
           - reference-id: CCC.Vector.CP02
           - reference-id: CCC.Vector.CP05
@@ -100,7 +100,7 @@ threats:
       or by correlating embeddings across modalities (e.g., voice and face), bypassing
       surface-level access controls.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Vector.Capabilities
         entries:
           - reference-id: CCC.Vector.CP04
           - reference-id: CCC.Vector.CP10
@@ -116,7 +116,7 @@ threats:
       with or roll back index versions, potentially restoring poisoned data or breaking
       downstream integrations.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Vector.Capabilities
         entries:
           - reference-id: CCC.Vector.CP07
           - reference-id: CCC.Vector.CP11
@@ -138,7 +138,7 @@ threats:
       crashes or logic errors. This can result in denial of service or incorrect similarity
       results.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Vector.Capabilities
         entries:
           - reference-id: CCC.Vector.CP08
           - reference-id: CCC.Vector.CP09
@@ -158,7 +158,7 @@ threats:
       or biased results. Adversaries may exploit these differences to evade detection
       or bias AI responses.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Vector.Capabilities
         entries:
           - reference-id: CCC.Vector.CP12
     external-mappings:

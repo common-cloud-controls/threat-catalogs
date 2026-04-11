@@ -60,7 +60,7 @@ threats:
       either at the dataset level or via IAM policies, allowing unauthorized users to read or modify sensitive data,
       leading to data breaches and compliance violations.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.DataWar.Capabilities
         entries:
           - reference-id: CCC.DataWar.CP01
     external-mappings:
@@ -75,7 +75,7 @@ threats:
       Attackers may create or exploit unauthorized views to access sensitive data without proper permissions,
       leading to data leakage.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.DataWar.Capabilities
         entries:
           - reference-id: CCC.DataWar.CP02
     external-mappings:
@@ -90,7 +90,7 @@ threats:
       Lack of proper column-level security can lead to unauthorized users accessing sensitive data fields,
       resulting in data breaches.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.DataWar.Capabilities
         entries:
           - reference-id: CCC.DataWar.CP03
     external-mappings:

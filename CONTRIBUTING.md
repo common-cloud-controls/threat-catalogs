@@ -54,7 +54,7 @@ An optional list of references to threats defined in [core-catalog](https://gith
 
 ```yaml
 imports:
-  - reference-id: CCC
+  - reference-id: CCC.Core.Threats
     entries:
       - reference-id: CCC.Core.TH01
         remarks: Access Control is Misconfigured

@@ -53,7 +53,7 @@ threats:
       Attackers may trigger builds using unauthorized build agents or external services,
       leading to unauthorized code execution or deployment of malicious code.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Build.Capabilities
         entries:
           - reference-id: CCC.Build.CP01
           - reference-id: CCC.Build.CP04
@@ -68,7 +68,7 @@ threats:
       If build environments have external network access, they may be accessed by unauthorized parties,
       leading to data exfiltration or tampering.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Build.Capabilities
         entries:
           - reference-id: CCC.Build.CP03
     external-mappings:

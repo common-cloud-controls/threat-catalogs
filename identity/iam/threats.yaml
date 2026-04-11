@@ -39,7 +39,7 @@ threats:
       potentially bypassing other security controls and enabling lateral movement across
       cloud resources.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.IAM.Capabilities
         entries:
           - reference-id: CCC.IAM.CP02
             strength: 0 # Not yet specified
@@ -87,7 +87,7 @@ threats:
       This can enable unauthorized data access, privilege escalation, or other unintended
       actions by principals whose credentials might be compromised or who are acting erroneously.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.IAM.Capabilities
         entries:
           - reference-id: CCC.IAM.CP02
             strength: 0 # Not yet specified
@@ -123,7 +123,7 @@ threats:
       or impersonate it. This can allow an external or unauthorized identity to gain access
       to the cloud environment, completely bypassing internal identity controls.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.IAM.Capabilities
         entries:
           - reference-id: CCC.IAM.CP06
             strength: 0 # Not yet specified
@@ -149,7 +149,7 @@ threats:
       additional credentials such as access keys, service accounts and
       temporary credentials to establish persistance or elevate their privileges.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.IAM.Capabilities
         entries:
           - reference-id: CCC.IAM.CP02
             strength: 0 # Not yet specified
@@ -183,7 +183,7 @@ threats:
       An adversary with access to a sufficiently privileged cloud account may create
       additional IAM roles to establish persistance or elevate their privileges.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.IAM.Capabilities
         entries:
           - reference-id: CCC.IAM.CP06
             strength: 0 # Not yet specified
@@ -208,7 +208,7 @@ threats:
       An adversary with access to a sufficiently privileged cloud account may modify
       IAM policies to establish persistance or elevate their privileges.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.IAM.Capabilities
         entries:
           - reference-id: CCC.IAM.CP02
             strength: 0 # Not yet specified
@@ -238,7 +238,7 @@ threats:
       function. This "privilege creep" through group inheritance complicates auditing and can
       lead to an identity having standing access to sensitive resources.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.IAM.Capabilities
         entries:
           - reference-id: CCC.IAM.CP05
             strength: 0 # Not yet specified
@@ -260,7 +260,7 @@ threats:
       to directly assume the target role, the principal can attach it to a new resource
       they control and then use that resource to perform unauthorized actions.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.IAM.Capabilities
         entries:
           - reference-id: CCC.IAM.CP02
             strength: 0 # Not yet specified
@@ -286,7 +286,7 @@ threats:
       not rotated periodically according to security best practices, extending exposure
       in the event of credentials compromise.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.IAM.Capabilities
         entries:
           - reference-id: CCC.IAM.CP02
             strength: 0 # Not yet specified
@@ -314,7 +314,7 @@ threats:
       original username is reactivated or reassigned in the IdP, granting unintended
       access to a new principal.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.IAM.Capabilities
         entries:
           - reference-id: CCC.IAM.CP08
             strength: 0 # Not yet specified
@@ -336,7 +336,7 @@ threats:
       Unused IAM identity that is no longer needed or monitored remains active. Its compromise
       is less likely to be detected, and it represents a persistent, unnecessary attack surface.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.IAM.Capabilities
         entries:
           - reference-id: CCC.IAM.CP02
             strength: 0 # Not yet specified
@@ -368,7 +368,7 @@ threats:
       to the cloud environment. A role in the cloud account (the "deputy"), which trusts that third-party
       application, then performs unauthorized actions on behalf of the actor.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.IAM.Capabilities
         entries:
           - reference-id: CCC.IAM.CP06
             strength: 0 # Not yet specified

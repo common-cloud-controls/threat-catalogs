@@ -60,7 +60,7 @@ threats:
       may be gained to the RDMS environment. This may lead to data breaches,
       data manipulation, or overall compromise of the database instance.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.RDMS.Capabilities
         entries:
           - reference-id: CCC.RDMS.CP06
           - reference-id: CCC.RDMS.CP07
@@ -77,7 +77,7 @@ threats:
       unauthorized access if successful, compromising database security
       and sensitive information.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.RDMS.Capabilities
         entries:
           - reference-id: CCC.RDMS.CP07
     external-mappings:
@@ -92,7 +92,7 @@ threats:
       ability to recover data and maintain business continuity. This condition
       increases the risk of data loss and extended system downtime.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP11
     external-mappings:
@@ -108,7 +108,7 @@ threats:
       could disrupt operations and result in data inconsistency or
       corruption.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP11
     external-mappings:
@@ -124,7 +124,7 @@ threats:
       increases the risk of data exposure if sensitive information is contained
       in the snapshots.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP11
     external-mappings:

@@ -39,7 +39,7 @@ threats:
       configurations, or secrets. Use of such images can introduce
       vulnerabilities into environments where they are deployed.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.VM.Capabilities
         entries:
           - reference-id: CCC.VM.CP11
     external-mappings:
@@ -56,7 +56,7 @@ threats:
       appropriate access controls, allowing unauthorized retrieval of sensitive
       configuration details or temporary credentials.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.VM.Capabilities
         entries:
           - reference-id: CCC.VM.CP16
     external-mappings:
@@ -72,7 +72,7 @@ threats:
       configuration changes. If not securely managed, these scripts can modify
       instance behavior in unexpected or insecure ways.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.VM.Capabilities
         entries:
           - reference-id: CCC.VM.CP19
     external-mappings:
@@ -89,7 +89,7 @@ threats:
       insecure configurations. When reused across deployments, these templates
       can replicate vulnerabilities at scale.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.VM.Capabilities
         entries:
           - reference-id: CCC.VM.CP18
     external-mappings:
@@ -105,7 +105,7 @@ threats:
       virtual machines and untrusted networks or services, increasing exposure
       to unauthorized access and lateral movement.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP23
     external-mappings:
@@ -122,7 +122,7 @@ threats:
       RDP without proper access controls or network restrictions, allowing
       unintended access to administrative interfaces.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.VM.Capabilities
         entries:
           - reference-id: CCC.VM.CP22
     external-mappings:
@@ -140,7 +140,7 @@ threats:
       to service degradation or denial-of-service if critical processes are scheduled on such VMs,
       potentially impacting system reliability and availability.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.VM.Capabilities
         entries:
           - reference-id: CCC.VM.CP06
     external-mappings:
@@ -161,7 +161,7 @@ threats:
       exposed to increased risk of side-channel or cross-VM activities. This can result in data
       leakage or memory scraping, potentially compromising data confidentiality and system integrity.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.VM.Capabilities
         entries:
           - reference-id: CCC.VM.CP07
     external-mappings:
@@ -183,7 +183,7 @@ threats:
       increased computational capacity for unintended actions, or unplanned cost increases, potentially
       affecting system security and operational control.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.VM.Capabilities
         entries:
           - reference-id: CCC.VM.CP08
     external-mappings:
@@ -205,7 +205,7 @@ threats:
       billing anomalies, service instability, or disruption of resource quotas, potentially impacting
       cost management and service availability.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.VM.Capabilities
         entries:
           - reference-id: CCC.VM.CP09
     external-mappings:
@@ -223,7 +223,7 @@ threats:
       The deployment of compromised images can propagate threats across cloud infrastructure, potentially
       affecting data integrity, confidentiality, and system reliability.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.VM.Capabilities
         entries:
           - reference-id: CCC.VM.CP10
     external-mappings:

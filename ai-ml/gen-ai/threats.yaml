@@ -57,11 +57,13 @@ threats:
       sources ingested by the model). Both text-based and multi-modal prompt
       injection is possible.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP14
             strength: 0 # Not yet specified
             remarks: API Access
+      - reference-id: CCC.GenAI.Capabilities
+        entries:
           - reference-id: CCC.GenAI.CP15
             strength: 0 # Not yet specified
             remarks: Text-Based Prompts
@@ -135,7 +137,7 @@ threats:
       steering it towards specific outputs, degrading performance or 
       introducing backdoors.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP02
             strength: 0 # Not yet specified
@@ -143,6 +145,8 @@ threats:
           - reference-id: CCC.Core.CP06
             strength: 0 # Not yet specified
             remarks: Identity-Based Access Control
+      - reference-id: CCC.GenAI.Capabilities
+        entries:
           - reference-id: CCC.GenAI.CP03
             strength: 0 # Not yet specified
             remarks: Embedding Model Selection
@@ -191,7 +195,7 @@ threats:
       training and may then be leaked to unintended and unauthorised parties 
       by querying the model, for example through crafted prompts.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP02
             strength: 0 # Not yet specified
@@ -199,6 +203,8 @@ threats:
           - reference-id: CCC.Core.CP06
             strength: 0 # Not yet specified
             remarks: Identity-Based Access Control
+      - reference-id: CCC.GenAI.Capabilities
+        entries:
           - reference-id: CCC.GenAI.CP22
             strength: 0 # Not yet specified
             remarks: Data Control
@@ -244,7 +250,7 @@ threats:
       validation can lead to system compromises, poor decision-making, and
       legal or reputational damage.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.GenAI.Capabilities
         entries:
           - reference-id: CCC.GenAI.CP03
             strength: 0 # Not yet specified
@@ -329,7 +335,7 @@ threats:
       resulting in operational failueres, compliance breaches and flawed
       decision making.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.GenAI.Capabilities
         entries:
           - reference-id: CCC.GenAI.CP21
             strength: 0 # Not yet specified
@@ -375,7 +381,7 @@ threats:
       be caused by the model misinterpreting an ambiguous prompt or being
       manipulated by an adversary into misusing its delegated authority.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.GenAI.Capabilities
         entries:
           - reference-id: CCC.GenAI.CP21
             strength: 0 # Not yet specified
@@ -412,7 +418,7 @@ threats:
       pass a malicious payload to the plugin, potentially leading to system
       compromise, data exfiltration or privilege escalation.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.GenAI.Capabilities
         entries:
           - reference-id: CCC.GenAI.CP25
             strength: 0 # Not yet specified
@@ -443,7 +449,7 @@ threats:
       the final deployable artifact—may result in embedding backdoors or
       adversarial triggers altering model behaviour under certain conditions.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.GenAI.Capabilities
         entries:
           - reference-id: CCC.GenAI.CP01
             strength: 0 # Not yet specified
@@ -497,7 +503,7 @@ threats:
       makes it challenging to diagnose failures, detect hidden biases, and meet
       regulatory requirements for decision transparency.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.GenAI.Capabilities
         entries:
           - reference-id: CCC.GenAI.CP21
             strength: 0 # Not yet specified
@@ -527,7 +533,7 @@ threats:
       suddenly fail or become insecure, as their functional and safety
       assumptions are no longer valid.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP18
             strength: 0 # Not yet specified

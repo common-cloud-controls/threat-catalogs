@@ -39,7 +39,7 @@ threats:
       firewall rules,leading to unauthorized access and potential data
       breaches.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.VPC.Capabilities
         entries:
           - reference-id: CCC.VPC.CP01
     external-mappings:
@@ -54,7 +54,7 @@ threats:
       public internet, increasing the risk of attacks such as brute force,
       exploitation of vulnerabilities, or unauthorized access.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.VPC.Capabilities
         entries:
           - reference-id: CCC.VPC.CP04
     external-mappings:
@@ -70,7 +70,7 @@ threats:
       untrusted or unapproved subscriptions, leading to potential data
       exposure or exfiltration.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.VPC.Capabilities
         entries:
           - reference-id: CCC.VPC.CP11
     external-mappings:
@@ -86,7 +86,7 @@ threats:
       data exfiltration, and network misconfigurations. This lack of
       visibility increases the risk of undetected security incidents.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.VPC.Capabilities
         entries:
           - reference-id: CCC.VPC.CP16
     external-mappings:
@@ -100,7 +100,7 @@ threats:
       VPC Endpoint policies that are overly permissive may inadvertently expose
       resources within the VPC to unintended principals or external threats.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.VPC.Capabilities
         entries:
           - reference-id: CCC.VPC.CP17
     external-mappings:

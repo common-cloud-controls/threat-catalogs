@@ -96,7 +96,7 @@ threats:
       logging service's query or API interfaces by authorized but malicious
       insiders or compromised accounts exploiting legitimate access.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP06
             strength: 0 # Not yet specified

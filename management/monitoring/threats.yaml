@@ -38,7 +38,7 @@ threats:
       Unauthorised viewers may get access to PII if it is incorrectly collected by
       monitoring systems through metrics or tracing.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Monitoring.Capabilities
         entries:
           - reference-id: CCC.Monitoring.CP01
             strength: 0 # Not yet specified
@@ -67,7 +67,7 @@ threats:
       there is a problem, but if that information gets into the hands of a malicious
       actor, it can be used to target already problematic systems and mask malicious activity.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Monitoring.Capabilities
         entries:
           - reference-id: CCC.Monitoring.CP04
             strength: 0 # Not yet specified
@@ -86,7 +86,7 @@ threats:
       instigating denial of service attacks on internal system which otherwise may
       not be protected against this form of attack.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Monitoring.Capabilities
         entries:
           - reference-id: CCC.Monitoring.CP06
             strength: 0 # Not yet specified
@@ -108,7 +108,7 @@ threats:
       remote service and can then access internal services which would otherwise not
       be accessible directly.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Monitoring.Capabilities
         entries:
           - reference-id: CCC.Monitoring.CP06
             strength: 0 # Not yet specified
@@ -128,7 +128,7 @@ threats:
       exfiltration. The data can then be staged in the monitoring system and exfiltrated in
       bulk at a later point in time
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Monitoring.Capabilities
         entries:
           - reference-id: CCC.Monitoring.CP01
             strength: 0 # Not yet specified
@@ -157,7 +157,7 @@ threats:
       large volumes of metric data which would then need to be stored and processed, or even
       triggering resource scaling, this would cause an increase in cloud bill.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Monitoring.Capabilities
         entries:
           - reference-id: CCC.Monitoring.CP01
             strength: 0 # Not yet specified
@@ -179,7 +179,7 @@ threats:
       metric data to trigger malicious actions and re-compromise a newly replaced container
       or compute instance.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Monitoring.Capabilities
         entries:
           - reference-id: CCC.Monitoring.CP01
             strength: 0 # Not yet specified

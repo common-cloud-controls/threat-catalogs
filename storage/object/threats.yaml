@@ -45,9 +45,11 @@ threats:
       exfiltrated or destroyed prematurely, resulting in a loss of availability
       and potential exposure of sensitive data.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.ObjStor.Capabilities
         entries:
           - reference-id: CCC.ObjStor.CP08
+      - reference-id: CCC.Core.Capabilities
+        entries:
           - reference-id: CCC.Core.CP11
     external-mappings:
       - reference-id: MITRE-ATT&CK

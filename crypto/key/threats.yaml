@@ -30,7 +30,7 @@ threats:
       operations.  Service interruption or irreversible data loss may occur if
       the key material is no longer recoverable.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.KeyMgmt.Capabilities
         entries:
           - reference-id: CCC.KeyMgmt.CP14
             strength: 0 # Not yet specified
@@ -65,7 +65,7 @@ threats:
       can expose plaintext data, enabling unintended disclosure or exfiltration
       of sensitive information.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.KeyMgmt.Capabilities
         entries:
           - reference-id: CCC.KeyMgmt.CP10
             strength: 0 # Not yet specified
@@ -88,7 +88,7 @@ threats:
       material active longer than intended, decreasing cryptographic
       resilience and extending exposure in the event of key compromise.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.KeyMgmt.Capabilities
         entries:
           - reference-id: CCC.KeyMgmt.CP20
             strength: 0 # Not yet specified
@@ -111,7 +111,7 @@ threats:
       back-doored, or otherwise compromised key material to be introduced,
       reducing the overall strength of subsequent cryptographic operations.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.KeyMgmt.Capabilities
         entries:
           - reference-id: CCC.KeyMgmt.CP22
             strength: 0 # Not yet specified

@@ -38,7 +38,7 @@ threats:
       Absence of filtering or rate limiting permits malicious traffic to
       overload downstream services and facilitates brute-force activity.
     capabilities:
-      - reference-id: CCC
+      - reference-id: CCC.Core.Capabilities
         entries:
           - reference-id: CCC.Core.CP04
             strength: 0 # Not yet specified
