@@ -20,7 +20,7 @@ groups:
 
 threats:
   - id: CCC.KeyMgmt.TH01
-    group: CCC.Core.Encryption
+    group: Encryption
     title: |
       Deletion or Disabling of Key Versions Causing Denial of Service or
       Data Loss
@@ -58,7 +58,7 @@ threats:
             remarks: Inhibit System Recovery
 
   - id: CCC.KeyMgmt.TH02
-    group: CCC.Core.Encryption
+    group: Encryption
     title: Unrestricted Use of a KMS Key to Decrypt Data
     description: |
       Misconfigured permissions that allow broad invocation of the Decrypt API
@@ -81,7 +81,7 @@ threats:
             remarks: Use Alternate Authentication Material
 
   - id: CCC.KeyMgmt.TH03
-    group: CCC.Core.Encryption
+    group: Encryption
     title: Key Rotation is Disabled or Delayed Beyond Policy Limits
     description: |
       Modification of automatic or manual rotation settings can keep older key
@@ -104,7 +104,7 @@ threats:
             remarks: Impair Defenses
 
   - id: CCC.KeyMgmt.TH04
-    group: CCC.Core.Encryption
+    group: Encryption
     title: Introduction of Weak or Compromised Key Material During Import
     description: |
       Insufficient validation during the key-import process may allow weak,

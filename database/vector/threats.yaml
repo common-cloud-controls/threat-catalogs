@@ -58,7 +58,7 @@ groups:
 
 threats:
   - id: CCC.Vector.TH01
-    group: CCC.Core.Data
+    group: Data
     title: Embedding Extraction and Model Inversion
     description: Attackers may infer or reconstruct original data by probing vector
       similarity APIs, especially with unrestricted access. This enables model inversion
@@ -75,7 +75,7 @@ threats:
           - reference-id: AIR-SEC-002
             remarks: Information Leaked to Vector Store
   - id: CCC.Vector.TH02
-    group: CCC.Core.Ingestion
+    group: Ingestion
     title: Embedding and Index Poisoning
     description: Adversaries may insert malicious or adversarial vectors into the index
       through ingestion endpoints, polluting the dataset and degrading search quality,
@@ -94,7 +94,7 @@ threats:
           - reference-id: AIR-OP-014
             remarks: Inadequate System Alignment
   - id: CCC.Vector.TH03
-    group: CCC.Core.Data
+    group: Data
     title: Cross-modal or Metadata Leakage
     description: Attackers may infer sensitive information through metadata filters
       or by correlating embeddings across modalities (e.g., voice and face), bypassing
@@ -110,7 +110,7 @@ threats:
           - reference-id: AIR-SEC-002
             remarks: Information Leaked to Vector Store
   - id: CCC.Vector.TH04
-    group: CCC.Core.Resource
+    group: Data
     title: Index Corruption or Downgrade
     description: Attackers with unauthorized access or excessive permissions may tamper
       with or roll back index versions, potentially restoring poisoned data or breaking
@@ -132,7 +132,7 @@ threats:
           - reference-id: T1562
             remarks: Impair Defenses
   - id: CCC.Vector.TH05
-    group: CCC.Core.Ingestion
+    group: Ingestion
     title: Embedding Format or Dimension Attacks
     description: Poor validation of embedding formats or dimensions can cause service
       crashes or logic errors. This can result in denial of service or incorrect similarity
@@ -152,7 +152,7 @@ threats:
           - reference-id: T1027
             remarks: Obfuscated Files or Information
   - id: CCC.Vector.TH06
-    group: CCC.Core.Data
+    group: Data
     title: Search Result Manipulation via ANN Bias
     description: Approximate nearest neighbor (ANN) algorithms may yield non-deterministic
       or biased results. Adversaries may exploit these differences to evade detection
