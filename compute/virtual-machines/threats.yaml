@@ -25,6 +25,8 @@ imports:
         strength: 0 # Not yet specified
       - reference-id: CCC.Core.TH17
         strength: 0 # Not yet specified
+      - reference-id: CCC.Core.TH24
+        strength: 0 # Not yet specified
 
 groups:
   - id: ungrouped
@@ -80,22 +82,6 @@ threats:
         entries:
           - reference-id: T1204
           - reference-id: T1059.004
-
-  - id: CCC.VM.TH04
-    group: Resource
-    title: Instance Templates Propagate Insecure Defaults
-    description: |
-      Instance templates may contain hardcoded credentials, open ports, or
-      insecure configurations. When reused across deployments, these templates
-      can replicate vulnerabilities at scale.
-    capabilities:
-      - reference-id: CCC.VM.Capabilities
-        entries:
-          - reference-id: CCC.VM.CP18
-    external-mappings:
-      - reference-id: MITRE-ATT&CK
-        entries:
-          - reference-id: T1601.002
 
   - id: CCC.VM.TH05
     group: Networking

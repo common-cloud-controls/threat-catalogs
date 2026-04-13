@@ -25,27 +25,15 @@ imports:
       - reference-id: CCC.Core.TH15
         strength: 0 # Not yet specified
         remarks: Automated Enumeration and Reconnaissance by Non-human Entities
+      - reference-id: CCC.Core.TH24
+        strength: 0 # Not yet specified
+        remarks: Insecure Defaults Enable Unauthorized Access
 
 groups:
   - id: ungrouped
     title: Ungrouped
 
 threats:
-  - id: CCC.VPC.TH01
-    group: Networking
-    title: Unauthorized Access via Insecure Default Networks
-    description: |
-      Default network configurations may include insecure settings and open
-      firewall rules,leading to unauthorized access and potential data
-      breaches.
-    capabilities:
-      - reference-id: CCC.VPC.Capabilities
-        entries:
-          - reference-id: CCC.VPC.CP01
-    external-mappings:
-      - reference-id: MITRE-ATT&CK
-        entries:
-          - reference-id: T1040
   - id: CCC.VPC.TH02
     group: Networking
     title: Exposure of Resources to Public Internet

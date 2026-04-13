@@ -46,28 +46,15 @@ imports:
       - reference-id: CCC.Core.TH17
         strength: 0 # Not yet specified
         remarks: Unauthorized Network Access via Misconfigured Rules
+      - reference-id: CCC.Core.TH24
+        strength: 0 # Not yet specified
+        remarks: Insecure Defaults Enable Unauthorized Access
 
 groups:
   - id: ungrouped
     title: Ungrouped
 
 threats:
-  - id: CCC.RDMS.TH01
-    group: Access
-    title: Unauthorized Access via Default Credentials
-    description: |
-      If default credentials are not disabled or changed, unauthorized access
-      may be gained to the RDMS environment. This may lead to data breaches,
-      data manipulation, or overall compromise of the database instance.
-    capabilities:
-      - reference-id: CCC.RDMS.Capabilities
-        entries:
-          - reference-id: CCC.RDMS.CP06
-          - reference-id: CCC.RDMS.CP07
-    external-mappings:
-      - reference-id: MITRE-ATT&CK
-        entries:
-          - reference-id: T1078
   - id: CCC.RDMS.TH02
     group: Access
     title: Brute Force Attempts on Database Authentication

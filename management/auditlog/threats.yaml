@@ -19,91 +19,21 @@ imports:
       - reference-id: CCC.Core.TH16
         strength: 0 # Not yet specified
         remarks: Logging and Monitoring are Disabled
+      - reference-id: CCC.Core.TH20
+        strength: 0 # Not yet specified
+        remarks: Logging or Audit Coverage is Insufficient
+      - reference-id: CCC.Core.TH21
+        strength: 0 # Not yet specified
+        remarks: Sensitive Data is Exposed in Logs or Metrics
+      - reference-id: CCC.Core.TH22
+        strength: 0 # Not yet specified
+        remarks: Log Delivery is Delayed or Degraded
 
 groups:
   - id: ungrouped
     title: Ungrouped
 
 threats:
-  - id: CCC.AUDITLOG.TH01
-    group: Observability
-    title: Insufficient Audit Logs
-    description: |
-      If security critical audit events are not logged then it increases the difficulty to detect threats
-      and perform post incident analysis.
-    capabilities:
-      - reference-id: CCC.Core.Capabilities
-        entries:
-          - reference-id: CCC.Core.CP03
-          - reference-id: CCC.Core.CP10
-    external-mappings:
-      - reference-id: OWASPTOP10
-        entries:
-          - reference-id: A09:2021
-      - reference-id: CWE
-        entries:
-          - reference-id: CWE-778
-          - reference-id: CWE-223
-  - id: CCC.AUDITLOG.TH02
-    group: Observability
-    title: Log Ingestion Latency
-    description: |
-      Large spikes or sustained delays in log ingestion may degrade the timeliness
-      and completeness of security telemetry.
-      This can increase the time required to detect and investigate threats,
-      potentially impacting incident response effectiveness.
-    capabilities:
-      - reference-id: CCC.Core.Capabilities
-        entries:
-          - reference-id: CCC.Core.CP03
-          - reference-id: CCC.Core.CP10
-    external-mappings:
-      - reference-id: MITRE-ATT&CK
-        entries:
-          - reference-id: TA0005
-      - reference-id: OWASPTOP10
-        entries:
-          - reference-id: A09:2021
-      - reference-id: CWE
-        entries:
-          - reference-id: CWE-778
-          - reference-id: CWE-223
-  - id: CCC.AUDITLOG.TH03
-    group: Data
-    title: Sensitive Data Logged
-    description: |
-      Sensitive information such as  passwords, environment variables,
-      or personally identifiable information (PII)
-      may be included in audit logs due to a number of reasons such as;
-      end user human error, developers not sanitizing fields or
-      maliciously by a threat actor attempting to exfil data.
-      This can lead to unauthorized disclosure if logs are accessed by
-      unintended parties or forwarded to external systems.
-    capabilities:
-      - reference-id: CCC.AuditLog.Capabilities
-        entries:
-          - reference-id: CCC.AuditLog.CP03
-            strength: 0 # Not yet specified
-            remarks: Sink
-          - reference-id: CCC.AuditLog.CP08
-            strength: 0 # Not yet specified
-            remarks: External Sink
-      - reference-id: CCC.Core.Capabilities
-        entries:
-          - reference-id: CCC.Core.CP03
-          - reference-id: CCC.Core.CP10
-    external-mappings:
-      - reference-id: MITRE-ATT&CK
-        entries:
-          - reference-id: TA0006
-      - reference-id: OWASPTOP10
-        entries:
-          - reference-id: A09:2021
-          - reference-id: A02:2021
-      - reference-id: CWE
-        entries:
-          - reference-id: CWE-532
-          - reference-id: CWE-200
   - id: CCC.AUDITLOG.TH04
     group: Ingestion
     title: Insufficient encoding of audit logs

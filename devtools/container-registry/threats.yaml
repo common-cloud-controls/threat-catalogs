@@ -40,6 +40,9 @@ imports:
       - reference-id: CCC.Core.TH16
         strength: 0 # Not yet specified
         remarks: Logging and Monitoring are Disabled
+      - reference-id: CCC.Core.TH23
+        strength: 0 # Not yet specified
+        remarks: Retention or Lifecycle Policies are Misconfigured
 
 groups:
   - id: ungrouped
@@ -61,21 +64,3 @@ threats:
         entries:
           - reference-id: T1190
           - reference-id: T1195
-  - id: CCC.CntrReg.TH02
-    group: Resource
-    title: Accumulation of Unused Artifacts
-    description: |
-      The registry accumulates outdated or unused artifacts, increasing storage
-      costs and the risk of deploying vulnerable or untested versions.
-    capabilities:
-      - reference-id: CCC.CntrReg.Capabilities
-        entries:
-          - reference-id: CCC.CntrReg.CP04
-      - reference-id: CCC.Core.Capabilities
-        entries:
-          - reference-id: CCC.Core.CP18
-    external-mappings:
-      - reference-id: MITRE-ATT&CK
-        entries:
-          - reference-id: T1490
-          - reference-id: T1485

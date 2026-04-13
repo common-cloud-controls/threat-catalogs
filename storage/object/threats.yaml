@@ -31,31 +31,9 @@ imports:
         remarks: Older Resource Versions are Exploited
       - reference-id: CCC.Core.TH15
         remarks: Automated Enumeration and Reconnaissance by Non-human Entities
+      - reference-id: CCC.Core.TH23
+        remarks: Retention or Lifecycle Policies are Misconfigured
 
 groups:
   - id: ungrouped
     title: Ungrouped
-
-threats:
-  - id: CCC.ObjStor.TH01
-    group: Data
-    title: Data Exfiltration via Insecure Lifecycle Policies
-    description: |
-      Misconfigured lifecycle policies may unintentionally allow data to be
-      exfiltrated or destroyed prematurely, resulting in a loss of availability
-      and potential exposure of sensitive data.
-    capabilities:
-      - reference-id: CCC.ObjStor.Capabilities
-        entries:
-          - reference-id: CCC.ObjStor.CP08
-      - reference-id: CCC.Core.Capabilities
-        entries:
-          - reference-id: CCC.Core.CP11
-    external-mappings:
-      - reference-id: MITRE-ATT&CK
-        entries:
-          - reference-id: T1020
-          - reference-id: T1537
-          - reference-id: T1567
-          - reference-id: T1048
-          - reference-id: T1485

@@ -25,40 +25,15 @@ imports:
       - reference-id: CCC.Core.TH16
         strength: 0 # Not yet specified
         remarks: Logging and Monitoring are Disabled
+      - reference-id: CCC.Core.TH21
+        strength: 0 # Not yet specified
+        remarks: Sensitive Data is Exposed in Logs or Metrics
 
 groups:
   - id: ungrouped
     title: Ungrouped
 
 threats:
-  - id: CCC.Monitor.TH01
-    group: Data
-    title: Capture Personal Identifiable Information
-    description: |
-      Unauthorised viewers may get access to PII if it is incorrectly collected by
-      monitoring systems through metrics or tracing.
-    capabilities:
-      - reference-id: CCC.Monitoring.Capabilities
-        entries:
-          - reference-id: CCC.Monitoring.CP01
-            strength: 0 # Not yet specified
-            remarks: Metric collection
-          - reference-id: CCC.Monitoring.CP02
-            strength: 0 # Not yet specified
-            remarks: Tracing
-          - reference-id: CCC.Monitoring.CP08
-            strength: 0 # Not yet specified
-            remarks: Application Performance Monitoring (APM)
-          - reference-id: CCC.Monitoring.CP09
-            strength: 0 # Not yet specified
-            remarks: Dashboard
-          - reference-id: CCC.Monitoring.CP11
-            strength: 0 # Not yet specified
-            remarks: Integration with Third-Party Tools
-    external-mappings:
-      - reference-id: MITRE-ATT&CK
-        entries:
-          - reference-id: T1589 #Gather Victim Identity Information
   - id: CCC.Monitor.TH02
     group: Observability
     title: Health Checks Used to Identify Attack Targets
