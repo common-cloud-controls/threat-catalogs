@@ -31,8 +31,22 @@ imports:
         remarks: Older Resource Versions are Exploited
       - reference-id: CCC.Core.TH15
         remarks: Automated Enumeration and Reconnaissance by Non-human Entities
+      - reference-id: CCC.Core.TH16
+        remarks: Publications are Disabled
+      - reference-id: CCC.Core.TH17
+        remarks: Responses are Generated for Unauthorized Requests
+      - reference-id: CCC.Core.TH18
+        remarks: Encryption Key is Misused
+      - reference-id: CCC.Core.TH19
+        remarks: Metrics are Read by Unauthorized Entities
+      - reference-id: CCC.Core.TH20
+        remarks: Logging or Audit Coverage is Insufficient
+      - reference-id: CCC.Core.TH21
+        remarks: Sensitive Data is Exposed in Logs or Metrics
       - reference-id: CCC.Core.TH23
         remarks: Retention or Lifecycle Policies are Misconfigured
+      - reference-id: CCC.Core.TH24
+        remarks: Insecure Defaults Enable Unauthorized Access
 
 groups:
   - id: ungrouped

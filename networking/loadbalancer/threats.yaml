@@ -7,6 +7,9 @@ imports:
       - reference-id: CCC.Core.TH02
         strength: 0 # Not yet specified
         remarks: Data is Intercepted in Transit
+      - reference-id: CCC.Core.TH06
+        strength: 0 # Not yet specified
+        remarks: Data is Lost or Corrupted
       - reference-id: CCC.Core.TH07
         strength: 0 # Not yet specified
         remarks: Logs are Tampered With or Deleted
@@ -16,6 +19,9 @@ imports:
       - reference-id: CCC.Core.TH12
         strength: 0 # Not yet specified
         remarks: Resource Constraints are Exhausted
+      - reference-id: CCC.Core.TH13
+        strength: 0 # Not yet specified
+        remarks: Resource Tags are Manipulated
       - reference-id: CCC.Core.TH15
         strength: 0 # Not yet specified
         remarks: Automated Enumeration and Reconnaissance by Non-human
@@ -25,6 +31,24 @@ imports:
       - reference-id: CCC.Core.TH17
         strength: 0 # Not yet specified
         remarks: Unauthorized Network Access via Misconfigured Rules
+      - reference-id: CCC.Core.TH18
+        strength: 0 # Not yet specified
+        remarks: Encryption Key is Misused
+      - reference-id: CCC.Core.TH19
+        strength: 0 # Not yet specified
+        remarks: Metrics are Read by Unauthorized Entities
+      - reference-id: CCC.Core.TH20
+        strength: 0 # Not yet specified
+        remarks: Logging or Audit Coverage is Insufficient
+      - reference-id: CCC.Core.TH21
+        strength: 0 # Not yet specified
+        remarks: Sensitive Data is Exposed in Logs or Metrics
+      - reference-id: CCC.Core.TH22
+        strength: 0 # Not yet specified
+        remarks: Log Delivery is Delayed or Degraded
+      - reference-id: CCC.Core.TH24
+        strength: 0 # Not yet specified
+        remarks: Insecure Defaults Enable Unauthorized Access
 
 groups:
   - id: ungrouped

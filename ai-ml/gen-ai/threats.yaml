@@ -40,6 +40,24 @@ imports:
       - reference-id: CCC.Core.TH16
         strength: 0 # Not yet specified
         remarks: Logging and Monitoring are Disabled
+      - reference-id: CCC.Core.TH17
+        strength: 0 # Not yet specified
+        remarks: Responses are Generated for Unauthorized Requests
+      - reference-id: CCC.Core.TH18
+        strength: 0 # Not yet specified
+        remarks: Encryption Key is Misused
+      - reference-id: CCC.Core.TH20
+        strength: 0 # Not yet specified
+        remarks: Logging or Audit Coverage is Insufficient
+      - reference-id: CCC.Core.TH21
+        strength: 0 # Not yet specified
+        remarks: Sensitive Data is Exposed in Logs or Metrics
+      - reference-id: CCC.Core.TH24
+        strength: 0 # Not yet specified
+        remarks: Insecure Defaults Enable Unauthorized Access
+      - reference-id: CCC.Core.TH25
+        strength: 0 # Not yet specified
+        remarks: Credentials are Stale, Unused, or Long-Lived
 
 groups:
   - id: ungrouped

@@ -3,6 +3,8 @@ imports:
     entries:
       - reference-id: CCC.Core.TH01
         strength: 0 # Not yet specified
+      - reference-id: CCC.Core.TH02
+        strength: 0 # Not yet specified
       - reference-id: CCC.Core.TH03
         strength: 0 # Not yet specified
       - reference-id: CCC.Core.TH05
@@ -19,11 +21,23 @@ imports:
         strength: 0 # Not yet specified
       - reference-id: CCC.Core.TH11
         strength: 0 # Not yet specified
+      - reference-id: CCC.Core.TH12
+        strength: 0 # Not yet specified
       - reference-id: CCC.Core.TH13
+        strength: 0 # Not yet specified
+      - reference-id: CCC.Core.TH14
+        strength: 0 # Not yet specified
+      - reference-id: CCC.Core.TH15
         strength: 0 # Not yet specified
       - reference-id: CCC.Core.TH16
         strength: 0 # Not yet specified
       - reference-id: CCC.Core.TH17
+        strength: 0 # Not yet specified
+      - reference-id: CCC.Core.TH18
+        strength: 0 # Not yet specified
+      - reference-id: CCC.Core.TH20
+        strength: 0 # Not yet specified
+      - reference-id: CCC.Core.TH21
         strength: 0 # Not yet specified
       - reference-id: CCC.Core.TH24
         strength: 0 # Not yet specified

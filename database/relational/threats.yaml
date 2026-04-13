@@ -22,6 +22,9 @@ imports:
       - reference-id: CCC.Core.TH07
         strength: 0 # Not yet specified
         remarks: Logs are tampered with or deleted
+      - reference-id: CCC.Core.TH08
+        strength: 0 # Not yet specified
+        remarks: Runtime Metrics are Manipulated
       - reference-id: CCC.Core.TH09
         strength: 0 # Not yet specified
         remarks: Logs or monitoring data are read by unauthorized users
@@ -37,6 +40,9 @@ imports:
       - reference-id: CCC.Core.TH13
         strength: 0 # Not yet specified
         remarks: Resource tags are manipulated
+      - reference-id: CCC.Core.TH14
+        strength: 0 # Not yet specified
+        remarks: Older Resource Versions are Used
       - reference-id: CCC.Core.TH15
         strength: 0 # Not yet specified
         remarks: Automated enumeration and reconnaissance by non-human entities
@@ -46,9 +52,30 @@ imports:
       - reference-id: CCC.Core.TH17
         strength: 0 # Not yet specified
         remarks: Unauthorized Network Access via Misconfigured Rules
+      - reference-id: CCC.Core.TH18
+        strength: 0 # Not yet specified
+        remarks: Encryption Key is Misused
+      - reference-id: CCC.Core.TH19
+        strength: 0 # Not yet specified
+        remarks: Metrics are Read by Unauthorized Entities
+      - reference-id: CCC.Core.TH20
+        strength: 0 # Not yet specified
+        remarks: Logging or Audit Coverage is Insufficient
+      - reference-id: CCC.Core.TH21
+        strength: 0 # Not yet specified
+        remarks: Sensitive Data is Exposed in Logs or Metrics
+      - reference-id: CCC.Core.TH22
+        strength: 0 # Not yet specified
+        remarks: Log Delivery is Delayed or Degraded
+      - reference-id: CCC.Core.TH23
+        strength: 0 # Not yet specified
+        remarks: Retention or Lifecycle Policies are Misconfigured
       - reference-id: CCC.Core.TH24
         strength: 0 # Not yet specified
         remarks: Insecure Defaults Enable Unauthorized Access
+      - reference-id: CCC.Core.TH25
+        strength: 0 # Not yet specified
+        remarks: Credentials are Stale, Unused, or Long-Lived
 
 groups:
   - id: ungrouped
